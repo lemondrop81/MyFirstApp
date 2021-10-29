@@ -3,6 +3,10 @@ plugins {
     id 'kotlin-android'
 }
 
+ext {
+    myVar = '2.0.0'
+}
+
 android {
     compileSdk 31
 
@@ -37,7 +41,9 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    def ktxVersion = "1.7.0"
+
+    implementation "androidx.core:core-ktx:$ktxVersion"
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
