@@ -10,18 +10,18 @@ import com.example.myfirstapp.R
 import com.example.myfirstapp.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
-    private var binding: FragmentSecondBinding? = null
+    private lateinit var binding: FragmentSecondBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSecondBinding.inflate(inflater, container, false)
-        return binding!!.root
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding!!.buttonSecond.setOnClickListener {
+        binding.buttonSecond.setOnClickListener {
             NavHostFragment.findNavController(this@SecondFragment)
                 .navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
@@ -29,6 +29,5 @@ class SecondFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
     }
 }
