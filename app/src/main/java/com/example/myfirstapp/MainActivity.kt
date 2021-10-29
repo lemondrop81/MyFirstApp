@@ -1,7 +1,7 @@
 package com.example.myfirstapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myfirstapp.databinding.ActivityMainBinding
 import com.example.myfirstapp.utilities.MyClass
 
