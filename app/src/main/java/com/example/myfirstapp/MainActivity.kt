@@ -17,9 +17,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        saySomething()
+
+
+    }
+
+    private fun saySomething() {
         val myFirstClass = MyClass()
         myFirstClass.saySomething()
-
-
     }
 }

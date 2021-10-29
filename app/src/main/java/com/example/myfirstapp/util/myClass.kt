@@ -1,4 +1,4 @@
-package com.example.myfirstapp.utilities
+package com.example.myfirstapp.util
 
 import android.util.Log
 
