@@ -14,7 +14,7 @@ class FirstFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding!!.root
     }
@@ -25,6 +25,7 @@ class FirstFragment : Fragment() {
             NavHostFragment.findNavController(this@FirstFragment)
                 .navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        binding!!.textviewFirst.text = "Hello Android!"
     }
 
     override fun onDestroyView() {
