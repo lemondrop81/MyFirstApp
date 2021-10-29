@@ -17,7 +17,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
         val myClass = MyClass()
         myClass.saySomething()
+
+        val myVar: IntArray
+        val intent = parent
+
+    }
+
+
+    fun myFunc1()
+    {
+
+    }
+
+    fun myFunc2()
+    {
+
     }
 }
