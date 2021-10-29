@@ -51,6 +51,8 @@ android {
 
 dependencies {
 
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
     def ktxVersion = "1.7.0"
 
     implementation "androidx.core:core-ktx:$ktxVersion"
