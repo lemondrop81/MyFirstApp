@@ -1,6 +1,5 @@
 package com.example.myfirstapp
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myfirstapp.databinding.ActivityMainBinding
@@ -18,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val myClass = MyClass()
-        myClass.saySomething()
+        val myFirstClass = MyClass()
+        myFirstClass.saySomething()
 
 
     }
