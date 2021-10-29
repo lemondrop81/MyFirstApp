@@ -4,6 +4,7 @@ import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myfirstapp.databinding.ActivityMainBinding
+import com.example.myfirstapp.utilities.MyClass
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,5 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val myClass = MyClass()
+        myClass.saySomething()
     }
 }
